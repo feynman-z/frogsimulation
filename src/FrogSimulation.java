@@ -16,14 +16,12 @@ public class FrogSimulation {
         if (sign >= 0.5) {
             a *= -1;
         }
-        System.out.println("hopdistance " + a);
         return a;
     }
     public boolean simulate() {
         int position = 0;
         for (int i = 1; i<maxHops+1; i++){
             position += hopDistance();
-            System.out.println("position " + position);
             if (position >= goalDistance){
                 System.out.println("true");
                 return true;
@@ -44,6 +42,7 @@ public class FrogSimulation {
                 counter += 1;
             }
         }
+        System.out.println("runsimulations " + counter/num);
         return counter/num;
     }
 }

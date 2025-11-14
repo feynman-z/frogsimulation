@@ -3,6 +3,11 @@
 public class Main {
     public static void main(String[] args) {
         FrogSimulation sim = new FrogSimulation(24, 5);
+
         sim.simulate();
+//        sim.runSimulations(400);
+        FrogSimulation sim2 = new FrogSimulation(8, 3);
+        sim2.simulate();
+
     }
 }
